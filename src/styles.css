@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Utilities */
+
+:root {
+  --primary: #deddde;
+  --text: #202020;
+  --secondary: #f2ebff79;
+  /* --primary: #141316;
+  --text: #ffffffce;
+  --secondary: rgba(0, 0, 0, 0.13); */
+}
+
+::selection {
+  background: rgb(223, 149, 223);
+  color: rgb(32, 32, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  transition: 0.3s;
+}
+
+body {
+  background-color: var(--primary);
+  scroll-behavior: smooth;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7000da;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #48008b;
+}
+
+/* HOME PAGE Starts */
+
+/* Navbar */
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1.2em;
+}
+
+.nav a:hover,
+.nav a:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  position: absolute;
+  width: 100%;
+}
+
+.nav img {
+  width: 100px;
+  filter: invert(100%);
+}
+
+/*  Home-section */
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+.home {
+  background: url("https://i.postimg.cc/1t5kZ9GL/tanner-boriack-hxn-Bkzz9i-L4-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(29, 18, 2, 0.651);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.home p {
+  margin-top: 20px;
+  font-size: 0.5em;
+  font-weight: 100;
+}
+
+.home-btn {
+  background-image: linear-gradient(270deg, #5a0cd6, #b700ff, #b700ff, #5a0cd6);
+  background-position: 100% 50%;
+  background-size: 300% 100%;
+  color: #000000;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border-radius: 50px;
+  font-size: 0.5em;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+  color: white;
+  background-image: linear-gradient(270deg, #b700ff, #5a0cd6, #5a0cd6, #b700ff);
+}
+
+/* Features-section */
+
+.features-head {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 100;
+  margin: 100px 0;
+  color: var(--text);
+}
+
+.features-head p {
+  font-size: 0.3em;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.features-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 200px;
+  justify-items: center;
+  text-align: center;
+  margin: 200px 0;
+  font-size: 1.2em;
+}
+
+.features-body .feature-card {
+}
+
+.features-body .feature-card p {
+  color: var(--text);
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+.features-body .feature-card h1 {
+  font-size: 3em;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.features-body .feature-card img {
+  margin-top: 30px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+}
+
+.features-body .feature-card img:hover,
+.features-body .feature-card img:focus {
+}
+
+/* Blog-section */
+
+.blog {
+  background-color: var(--secondary);
+  padding: 30px 20px;
+  color: var(--text);
+}
+
+.blog-head {
+  font-size: 1.4em;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+  padding: 15px 30px;
+  background-color: #ececec;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.blog-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+  column-gap: 40px;
+  row-gap: 50px;
+}
+
+#card-1 {
+  background: url("https://media.output.com/app/uploads/2022/09/ITS_Trooko_Blog-Thumbnail_V1.jpg?auto=format,compress&w=1600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-2 {
+  background: url("https://media.output.com/app/uploads/2022/08/ITS-Muna_Thumbnail_V1.png?auto=format,compress&w=1600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-3 {
+  background: url("https://media.output.com/app/uploads/2022/06/Output-Mag-Thumbnail_Talkback-Yang-Tan.png?auto=format,compress&w=1696");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-4 {
+  background: url("https://media.output.com/app/uploads/2022/07/ITS-Trevor-Lawrence_Thumbnail_V1.png?auto=format,compress&w=1600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-card {
+  display: flex;
+  align-items: flex-end;
+  height: 600px;
+  width: 100%;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0px -180px 50px rgba(0, 0, 0, 0.74);
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: left;
+}
+
+.blog-card:hover {
+  box-shadow: inset 0px -200px 50px rgba(0, 0, 0, 0.8);
+}
+
+.blog-card-content {
+  padding: 10px 0 10px 20px;
+}
+
+.blog-card-content button {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 7px;
+  padding: 5px 15px;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.blog-card-content h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.blog-card-content p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.card-date {
+  font-size: 0.9em !important;
+  color: #a5a5a5;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1110px) {
+  .features-body {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav a {
+    font-size: 1.2em;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav img {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .features-body .feature-card img {
+    width: 400px;
+    height: 350px;
+  }
+
+  .features-body {
+    row-gap: 120px;
+  }
+
+  .features-body .feature-card img {
+    width: 350px;
+    height: 230px;
+  }
+
+  .features-body .feature-card h1 {
+    font-size: 2.5em;
+  }
+
+  .blog-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-head {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .blog-head a {
+    display: none;
+  }
+
+  #card-3 {
+    display: none;
+  }
+
+  #card-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .home-content {
+    font-size: 2.5em;
+  }
+
+  .features-head h1 {
+    font-size: 1em;
+  }
+
+  .features-body {
+    margin-top: 50px;
+  }
+
+  .features-body .feature-card img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .blog-card {
+    height: 500px;
+    box-shadow: inset 0px -250px 80px rgb(0, 0, 0);
+  }
+
+  .blog-card:hover {
+    box-shadow: inset 0px -250px 80px rgb(0, 0, 0);
+  }
+}
+
+/* HOME PAGE Ends */
+
+/* COMPANY PAGE Starts */
+
+.company-header {
+  color: white;
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.2em;
+  background: url("https://assets.sonos.com/im/dw/image/v2/ABCG_PRD/on/demandware.static/-/Library-Sites-SonosLibrary/default/dwe0084208/images/pages/corporate/life-at-sonos/lifeSonos_header.jpg?strip=true")
+    no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.534);
+  background-position: center;
+  background-size: cover;
+  font-weight: 100;
+  text-align: center;
+}
+
+.company-header .company-header-content a {
+  font-size: 0.5em;
+  color: #ffffff;
+}
